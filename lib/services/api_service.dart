@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/note.dart';
 
 class ApiService {
-  static const String _baseUrl = "";
+  static const String _baseUrl = "https://desolate-beach-90944.herokuapp.com/notes";
 
   static Future<void> addNote(Note note) async {
     Uri requestUri = Uri.parse("$_baseUrl/add");
